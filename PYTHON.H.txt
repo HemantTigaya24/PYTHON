@@ -1,0 +1,208 @@
+PYTHON.H
+
+first program of conditions statement
+
+1)
+num1 = int(input("your first number is:"))
+num2 = int(input("your second number is :"))
+
+if num1>num2:
+    print(f"{num1} is greater than {num2}")
+elif num2>num1:
+    print(f"{num2} is greater than {num1}")
+else:
+    print("both are equal ")
+
+2)
+gender = input("tell your gender as a character (M OR F):")
+if gender == 'M'or gender == 'm':
+    print("good moring sir")
+elif gender == 'F' or gender == 'f':
+    print ("good moring mam")
+else:
+    print("defalt character")
+
+3)
+num1 = int(input("your first number is:"))
+num2 = int(input("your second number is :"))
+
+if num1>num2:
+    print(f"{num1} is greater than {num2}")
+elif num2>num1:
+    print(f"{num2} is greater than {num1}")
+else:
+    # print("both are equal ")
+
+4)
+gender = input("tell your gender as a character (M OR F):")
+if gender == 'M'or gender == 'm':
+    print("good moring sir")
+elif gender == 'F' or gender == 'f':
+    print ("good moring mam")
+else:
+    print("defalt character")
+
+5)
+number = int(input("enter the number is :"))
+if number%2==0:
+    print("the number is even")
+else:
+    print("the number is odd")
+
+6)
+name = input("Enter your name:")
+age = int(input("enter your age:"))
+if age >=18:
+    print(f"{name} are the valid for voting ")
+else :
+    print(f"{name} are the not valid for voting")
+
+7)
+year = int(input("enter the year:"))
+
+if year%400==0 or (year%4==0 and year%100!=0):
+    print(f"{year} is a lip year")
+else:
+    print(f"{year} not a lip year")
+
+8)
+unit = int(input("enter your electricity bills:"))
+if unit>=0 and unit<=100:
+    bill = unit*5
+    print(f"{unit} unit of bill is:" ,bill)
+elif unit<=200:
+    bill = unit*7
+    print(f"{unit} unit of bill is:",bill)
+elif unit<=300:
+    bill = unit*10
+    print(f"{unit} unit of bill is :",bill)
+else:
+    bill =unit*12
+    print(f"{unit} unit of bill is:",bill)
+
+9)
+number = int(input("enter your number:"))
+if number>=0 and number<=9:
+    print("onr digit number")
+elif number>9 and number<=99:
+    print("two digit number")
+elif number <=999:
+    print("three digit number")
+else:
+    print("others digit")
+
+10)
+amount = float(input("enter shoping amount:"))
+
+if amount >=5000:
+    discount = amount*20/100
+elif amount>=3000:
+    discount= amount*15/100
+elif amount>1000:
+    discount = amount*10/100
+else:
+    discount =0
+final_amount = amount - discount
+print(f"original amount is = {amount}")
+print(f"discount amount is = {discount}")
+print(f"final amount is = {final_amount}")
+
+11)
+a = int(input("enter your first number:"))
+b =int(input("enter youre second number:"))
+c =int(input("enter youre third number:"))
+d =int(input("enter youre second number:"))
+
+if a>=b and a>=c and a>=d:
+    print("a is the greatest of four  number")
+elif b>=a and b>=c and b>=d:
+    print("b is the greatest of four number")
+elif c>=a and c>=b and c>=d:
+    print("c is the greatest of four number")
+else:
+    print("d is the greatest of four number")
+
+12)
+a=float(input("enter your first number:"))
+opretor = input("enter opretor (+,-,*,/):")
+b= float(input("enter your second number:"))
+
+if opretor == '+':
+    result = a+b
+elif opretor == '-':
+    result = a-b
+elif opretor == '*':
+    result = a*b
+elif opretor =='/':
+    if b!=0:
+        result = a/b
+    else:
+        result = "cannot be zero"
+else:
+    result = invalid
+    
+print("result are:",result)
+
+13)
+number = int(input("enter your number:"))
+if number%2==0 and number%3==0:
+    print("divisible by both")
+
+elif number %2==0:
+    print("divisible by 2")
+elif number%3==0:
+    print("divisible by 3")
+
+else:
+    print("noth divisible by both")
+
+14)
+player1 = input("slecec(rock/papper/sccerier):")
+player2 = input("slecec(rock/paper/sccerier):")
+
+if player1 == player2:
+    print("draw")
+elif player1 == "rock" and player2 == "sccerier":
+    print("player 1 win")
+elif player1 == "paper" and player2 == "rock":
+    print("player 1 win")
+elif player1 == "sccerier" and player2 == "paper":
+    print("player 1 win")
+else:
+    print("player2 win")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
