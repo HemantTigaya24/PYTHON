@@ -45,3 +45,153 @@ for i in a:
     sum =sum+i
 
 print(sum/len(a))
+
+5)
+a=[12,21,2,12,1]
+
+for i in a:
+    print(i)
+    
+    
+6)
+a=["aaple","mango","orange","banana"]
+
+print("first fruit:",a[0])
+print("last element:",a[-1])
+    
+    
+7)
+number=[]
+for i in range(5):
+    n=int(input("enter your number:"))
+    number.append(n) #append new element ko add karne ke liye
+print("your list is:",number)
+    
+8)
+a=[1,2,3,4,3]
+print("length is",len(a))
+    
+9)
+a=(1,2,3,2,1)
+print(a)
+    
+10)
+a=[12,21,2,12,12]
+sum=0
+for i in a:
+    sum=sum+i
+print("sum of all number:",sum) 
+    
+11)
+a=[12,3,21,32,33]
+largest=a[0]
+
+for i in a:
+    if i>largest:
+        largest =i
+
+print("largest",largest)
+
+12)
+a=[12,332,21,11]
+smallest=a[0]
+for i in a:
+    if i<smallest:
+        smallest=i
+
+print("smallest:",smallest)
+
+13)
+a=[12,13,14,15,16]
+count =0
+for i in a:
+    if i%2==0:
+        count+=1
+print("even number in list:",count)
+
+14)
+a=[12,25,32,33,45,47]
+count=0
+for i in a:
+    if i%2!=0:
+        count+=1
+
+print("odd number in list",count)
+
+15)
+a=[1,23,24,32,33]
+sec_largest=a[0]
+largest=a[0]
+for i in a:
+    if i>largest:
+        sec_largest=largest
+        larrgest=i
+    elif i>sec_largest:
+        sec_largest=i
+print(sec_largest,larrgest)
+
+16)
+a=[12,13,14,15,16]
+reverse=[]
+for i in range(len(a)-1,-1,-1):
+    reverse.append(a[i])
+
+print(reverse)
+
+17)
+a=[12,21,22,23]
+n=int(input("enter your number:"))
+
+for i in range(len(a)):
+    if a[i]==n:
+        print("number is exists in the list")
+        break
+else:
+    print("not exists")
+
+18)
+a=[2,33,2,3,4]
+n=int(input("enter your number:"))
+count=0
+for i in a:
+    if i==n:
+        count+=1
+
+print(f"number {n} occur in {count} times")
+
+
+19)
+a=[22,24,25,45,64]
+
+even=[]
+odd=[]
+
+for i in a:
+    if i%2==0:
+        even.append(i)
+    else:
+        odd.append(i)
+
+new_list=[even,odd]
+
+print(new_list)
+
+20)
+a=[1,2,2,2,3,4,5]
+
+new_list=[]
+
+for i in a:
+    if i not in new_list:
+        new_list.append(i)
+print("old list = ",a)
+print("new_list =",new_list)
+
+
+
+
+
+
+
+
+
